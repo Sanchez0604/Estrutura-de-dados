@@ -1,0 +1,57 @@
+def inserir(num,lista):
+    if num>=0 and num<=10:
+        lista[num] = True
+    else:
+        return 'valor inválido'
+def criar():
+    lista=[False]*11
+    return lista
+def show (lista):
+    for i in range(11):
+        if  lista[i]:
+            print(i)
+def remover (num,lista):
+    if num>=0 and num <=10:
+        lista[num]=False
+    else:
+        return 'valor inválido' 
+def uniao(listaA, listaB):
+    listaC=criar()
+    for i in range(11):
+        listaC[i]=listaA[i] or listaB[i]
+    return listaC
+def inter(listaA, listaB):
+    listaC= criar()
+    for i in range(11):
+        listaC[i]=listaA[i] and listaB[i]
+    return listaC
+
+lista1 = criar()
+lista2 = criar()
+inserir(1,lista1)
+inserir(2,lista1)
+inserir(7,lista1)
+inserir(5,lista2)
+inserir(7,lista2)
+lista3 = uniao(lista1,lista2)
+print('Lista 1:')
+show(lista1)
+print('Lista 2:')
+show(lista2)
+print('Lista 3: (a união entre as duas listas)')
+show(lista3)
+lista4 = inter(lista1,lista2)
+print('Lista 4: (a interseção entre as duas listas)')
+show(lista4)
+'''
+lista= criar()
+inserir(2,lista)
+print('Apresentando a lista após inserir o valor 2:')
+show (lista)
+inserir(6,lista)
+print('Apresentando a lista após inserir o valor 6:')
+show(lista)
+remover(2,lista)
+print('Apresentando a lista após remover o valor 2:')
+show (lista)
+'''
