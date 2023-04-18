@@ -27,7 +27,7 @@ lista.show()
 # Busca o elemento e retorna o indice
 lista.buscar(3)
 
-# Adiciona o elemento após o elemento dado
+# Adiciona o elemento 6 após o elemento dado
 lista.inserir_apos(6,5)
 lista.show()
 
