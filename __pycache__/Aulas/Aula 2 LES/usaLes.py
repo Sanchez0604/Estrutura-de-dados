@@ -28,9 +28,9 @@ lista.show()
 lista.buscar(3)
 
 # Adiciona o elemento após o elemento dado
-#lista.inserir_apos(6,5)
-#lista.show()
+lista.inserir_apos(6,5)
+lista.show()
 
 # Adiciona o elemento antes do elemento dado
-lista.inserir_antes(7,9)
-lista.show
+#lista.inserir_antes(7,9)
+#lista.show

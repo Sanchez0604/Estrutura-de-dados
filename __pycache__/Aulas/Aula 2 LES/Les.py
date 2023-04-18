@@ -43,24 +43,24 @@ class Les:
             else:
                 return "não encontrado"
             
-    def lista_cheia(self):
-        if self.quant == self.tam_maximo:
+    def lista_vazia(self):
+        if self.quant != self.tam_maximo:
             return True
         else:
             return False
 
     def inserir_apos(self,valor1,valor2):
-        if self.lista_cheia() == False:
+        if self.lista_vazia():
             for i in range(self.quant):
-                if self.vetor[i]== valor2:
+                if self.vetor[i] == valor2:
                     for value in range(self.quant,i,-1):
                         self.vetor[value]=self.vetor[value-1]
                     self.vetor[i+1]=valor1
             self.quant+=1
     def inserir_antes(self,valor1,valor2):
-        if self.lista_cheia() == False:
+        if self.lista_vazia():
             for i in range(self.quant):
-                if self.vetor[i]== valor2:
+                if self.vetor[i] == valor2:
                     for value in range(self.quant,i,-1):
                         print(value)
                         self.vetor[value]=self.vetor[value-1]
