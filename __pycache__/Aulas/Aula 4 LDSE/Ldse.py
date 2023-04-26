@@ -11,7 +11,7 @@ class Ldse:
             self.prim=self.ult=None
         else:
             aux= self.prim
-            while aux.prox!= posicao:
+            while aux.prox != posicao:
                 aux= aux.prox
             aux.prox=aux.prox.prox
         self.quant-=1
