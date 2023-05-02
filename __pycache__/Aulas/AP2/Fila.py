@@ -11,6 +11,8 @@ class Fila:
     def insere(self,valor):
         if self.quant == 0:
             self.prim = self.ult = No(valor,None)
+        elif self.quant == 1:
+            self.prim = self.ult = No(valor,None)
         else:
             self.ult.prox = No(valor,None)
         self.quant += 1
