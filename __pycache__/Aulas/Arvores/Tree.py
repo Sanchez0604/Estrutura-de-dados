@@ -10,15 +10,17 @@ class Tree:
         else:
             self.raiz.insere(valor)
     def inOrdem(self):
-
         if self.raiz != None:
             self.raiz.inOrdem()
-        def preOrdem(self):
-            if self.raiz != None:
-                self.raiz.preOrdem()
-        def posOrdem(self):
-            if self.raiz != None:
-                self.raiz.posOrdem()
+    def preOrdem(self):
+        if self.raiz != None:
+            self.raiz.preOrdem()
+    def posOrdem(self):
+        if self.raiz != None:
+            self.raiz.posOrdem()
+    def printFolhas(self):
+        if self.raiz != None:
+            self.raiz.printFolhas()
 class No:
 
     def __init__(self, valor):
@@ -69,3 +71,12 @@ class No:
         print(self.info,end=" ")
         if self.esq != None:
             self.esq.qualOrdem()
+    def printFolhas(self):
+
+        if self.esq != None:
+            self.esq.printFolhas()
+        if self.esq == None and self.dir == None:
+            print(self.info,end=" ")    
+        if self.dir != None:
+            self.dir.printFolhas()
+    
